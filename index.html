@@ -5,153 +5,786 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Hashi | Portfolio</title>
+    <meta name="description"
+        content="Hashani Lihinikaduwa's personal portfolio - BICT Undergraduate and aspiring Network Engineering.">
+
+    <title>Hashani Lihinikaduwa's portfolio| BICT Undergraduate</title>
 
     <link rel="stylesheet" href="css/style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav>
-        <div class="logo">Hashi.</div>
+    <!-- Background -->
+    <div class="background-grid"></div>
 
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <!-- ================= NAVBAR ================= -->
 
+    <header class="navbar">
 
-    <!-- Home -->
-    <section class="hero" id="home">
+        <a href="#home" class="logo">
+            H<span>.</span>
+        </a>
 
-        <div>
-            <h1>Hi, I'm <span>Hashi</span> 👋</h1>
+        <nav id="navMenu">
 
-            <p>
-                BICT Undergraduate & Aspiring Software Developer
-            </p>
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#certifications">Certificates</a>
+            <a href="#contact">Contact</a>
 
-            <a href="#projects" class="btn">
-                View My Projects
+        </nav>
+
+        <div class="nav-actions">
+
+            <button id="themeToggle" class="theme-button" aria-label="Toggle theme">
+                ☀
+            </button>
+
+            <a href="#contact" class="nav-button">
+                Let's Talk
             </a>
-        </div>
 
-    </section>
-
-
-    <!-- About -->
-    <section id="about">
-
-        <h2 class="section-title">About Me</h2>
-
-        <div class="about">
-
-            <p>
-                I'm a BICT undergraduate passionate about
-                software development, web technologies and
-                networking. I'm continuously developing my
-                technical skills and building real-world projects.
-            </p>
+            <button id="menuToggle" class="menu-button">
+                ☰
+            </button>
 
         </div>
 
-    </section>
+    </header>
 
 
-    <!-- Skills -->
-    <section id="skills">
+    <main>
 
-        <h2 class="section-title">My Skills</h2>
+        <!-- ================= HERO ================= -->
 
-        <div class="skills-container">
+        <section class="hero" id="home">
 
-            <div class="skill">C</div>
-            <div class="skill">C++</div>
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">Node.js</div>
-            <div class="skill">Git</div>
-            <div class="skill">GitHub</div>
+            <div class="hero-content">
 
-        </div>
-
-    </section>
-
-
-    <!-- Projects -->
-    <section id="projects">
-
-        <h2 class="section-title">My Projects</h2>
-
-        <div class="projects-container">
-
-            <div class="project-card">
-
-                <h3>Portfolio Website</h3>
-
-                <p>
-                    My personal portfolio website built using
-                    HTML, CSS and JavaScript.
+                <p class="eyebrow">
+                    <span class="status-dot"></span>
+                    BICT Undergraduate Student at South Eastern University of Sri Lanka.
                 </p>
 
-                <a href="#" class="btn">GitHub</a>
+                <h1>
+                    Building ideas into
+                    <span>digital experiences.</span>
+                </h1>
+
+                <p class="hero-description">
+                    I'm Hashani Lihinikaduwa, a BICT undergraduate at South Eastern University at Sri Lanka and exploring
+                   Networking & cyber Security, web technologies and software development while building real-world projects.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="primary-button">
+                        View My Work
+                        <span>↗</span>
+                    </a>
+
+                    <a href="#about" class="secondary-button">
+                        More About Me..
+                    </a>
+
+                </div>
+
+                <div class="social-links">
+
+                    <a href="https://github.com/HashiLihinikadwa14"
+                        target="_blank">
+                        GitHub ↗
+                    </a>
+
+                    <span>•</span>
+
+                    <!-- CHANGE THIS -->
+                    <a href="https://www.linkedin.com/in/hashani-lihinikaduwa-604792293/"
+                        target="_blank">
+                        LinkedIn ↗
+                    </a>
+                    <a href="https://hashiworker.wordpress.com/"
+                        target="_blank">
+                        Wordpress ↗
+                    </a>
+                    <a href="https://x.com/Hashi14work"
+                        target="_blank">
+                        Twitter ↗
+                    </a>
+
+                </div>
 
             </div>
 
 
-            <div class="project-card">
+            <!-- Profile Card -->
 
-                <h3>Student Management System</h3>
+            <div class="profile-area">
 
-                <p>
-                    A student management system project
-                    that will be developed as part of my
-                    learning journey.
-                </p>
+                <div class="profile-glow"></div>
 
-                <a href="#" class="btn">Coming Soon</a>
+                <div class="profile-image">
+
+                    <!-- Add your photo to images/profile.jpg -->
+
+                    <img src="images/profile.jpg"
+                        alt="Hashi profile photo"
+                        onerror="this.style.display='none'; this.parentElement.classList.add('photo-placeholder');">
+
+                    <div class="placeholder-text">
+                        H
+                    </div>
+
+                </div>
+
+                <div class="profile-badge">
+                    <span></span>
+                    Available to learn & build
+                </div>
 
             </div>
 
-        </div>
-
-    </section>
+        </section>
 
 
-    <!-- Contact -->
-    <section id="contact">
+        <!-- ================= ABOUT ================= -->
 
-        <div class="contact">
+        <section class="section" id="about">
 
-            <h2 class="section-title">Contact Me</h2>
+            <div class="section-heading">
 
-            <p>
-                Interested in connecting with me?
+                <p class="section-number">
+                    01 — ABOUT ME
+                </p>
+
+                <h2>
+                    A student today.
+                    <span>A developer in progress.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="about-grid">
+
+                <div class="about-text">
+
+                    <p>
+                        I'm currently pursuing a Bachelor of
+                        Information and Communication Technology
+                        degree and continuously developing my
+                        technical skills through practical work.
+                    </p>
+
+                    <p>
+                        My interests include software development,
+                        web technologies and computer networking.
+                        I enjoy learning by building projects
+                        and solving practical problems.
+                    </p>
+
+                    <p>
+                        My goal is to continuously improve my
+                        technical knowledge and build a strong
+                        portfolio throughout my undergraduate journey.
+                    </p>
+
+                </div>
+
+
+                <div class="about-stats">
+
+                    <div class="stat">
+                        <strong>BICT</strong>
+                        <span>Undergraduate</span>
+                    </div>
+
+                    <div class="stat">
+                        <strong>∞</strong>
+                        <span>Continuous Learning</span>
+                    </div>
+
+                    <div class="stat">
+                        <strong>2026+</strong>
+                        <span>Building & Growing</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SKILLS ================= -->
+
+        <section class="section" id="skills">
+
+            <div class="section-heading">
+
+                <p class="section-number">
+                    02 — SKILLS
+                </p>
+
+                <h2>
+                    Technologies I'm
+                    <span>working with.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="skills-grid">
+
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        C
+                    </div>
+
+                    <h3>
+                        Programming
+                    </h3>
+
+                    <p>
+                        C · C++ · JavaScript
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        &lt;/&gt;
+                    </div>
+
+                    <h3>
+                        Web Development
+                    </h3>
+
+                    <p>
+                        HTML · CSS · JavaScript
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        JS
+                    </div>
+
+                    <h3>
+                        Backend
+                    </h3>
+
+                    <p>
+                        Node.js
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        GIT
+                    </div>
+
+                    <h3>
+                        Development Tools
+                    </h3>
+
+                    <p>
+                        Git · GitHub
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        NET
+                    </div>
+
+                    <h3>
+                        Networking
+                    </h3>
+
+                    <p>
+                        Currently Learning
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        API
+                    </div>
+
+                    <h3>
+                        APIs
+                    </h3>
+
+                    <p>
+                        Learning & Building
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROJECTS ================= -->
+
+        <section class="section" id="projects">
+
+            <div class="section-heading">
+
+                <p class="section-number">
+                    03 — PROJECTS
+                </p>
+
+                <h2>
+                    Things I'm
+                    <span>building.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="projects-grid">
+
+
+                <!-- Project 01 -->
+
+                <article class="project-card featured">
+
+                    <div class="project-number">
+                        01
+                    </div>
+
+                    <div class="project-content">
+
+                        <p class="project-type">
+                            PERSONAL PROJECT
+                        </p>
+
+                        <h3>
+                            Personal Portfolio
+                        </h3>
+
+                        <p>
+                            A modern responsive portfolio website
+                            created to document my skills, projects,
+                            education and development journey.
+                        </p>
+
+                        <div class="tech-list">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>GitHub Pages</span>
+
+                        </div>
+
+                        <a href="https://HashiLihinikadwa14.github.io"
+                            target="_blank"
+                            class="project-link">
+
+                            Live Website ↗
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Project 02 -->
+
+                <article class="project-card">
+
+                    <div class="project-number">
+                        02
+                    </div>
+
+                    <div class="project-content">
+
+                        <p class="project-type">
+                            UPCOMING PROJECT
+                        </p>
+
+                        <h3>
+                            Student Management System
+                        </h3>
+
+                        <p>
+                            A practical application for managing
+                            student information and academic records.
+                        </p>
+
+                        <div class="tech-list">
+
+                            <span>JavaScript</span>
+                            <span>Node.js</span>
+
+                        </div>
+
+                        <span class="coming-soon">
+                            Coming Soon
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Project 03 -->
+
+                <article class="project-card">
+
+                    <div class="project-number">
+                        03
+                    </div>
+
+                    <div class="project-content">
+
+                        <p class="project-type">
+                            FUTURE PROJECT
+                        </p>
+
+                        <h3>
+                            More Projects
+                        </h3>
+
+                        <p>
+                            University projects, networking projects,
+                            web applications and other practical
+                            projects will be added here.
+                        </p>
+
+                        <div class="tech-list">
+
+                            <span>Coming</span>
+                            <span>Soon</span>
+
+                        </div>
+
+                        <span class="coming-soon">
+                            In Progress
+                        </span>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= EDUCATION ================= -->
+
+        <section class="section" id="education">
+
+            <div class="section-heading">
+
+                <p class="section-number">
+                    04 — EDUCATION
+                </p>
+
+                <h2>
+                    My learning
+                    <span>journey.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="timeline">
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div>
+
+                        <span class="timeline-date">
+                            CURRENT
+                        </span>
+
+                        <h3>
+                            Bachelor of Information and
+                            Communication Technology
+                        </h3>
+
+                        <p>
+                            BICT Undergraduate
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div>
+
+                        <span class="timeline-date">
+                            CONTINUOUS
+                        </span>
+
+                        <h3>
+                            Self Learning & Practical Projects
+                        </h3>
+
+                        <p>
+                            Programming · Web Development ·
+                            Git & GitHub · Networking
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CERTIFICATIONS ================= -->
+
+        <section class="section" id="certifications">
+
+            <div class="section-heading">
+
+                <p class="section-number">
+                    05 — CERTIFICATIONS
+                </p>
+
+                <h2>
+                    Learning beyond
+                    <span>the classroom.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="certificate-grid">
+
+
+                <div class="certificate-card">
+
+                    <div class="certificate-icon">
+                        📜
+                    </div>
+
+                    <div>
+
+                        <span class="certificate-status">
+                            IN PROGRESS
+                        </span>
+
+                        <h3>
+                            Technical Certifications
+                        </h3>
+
+                        <p>
+                            Relevant programming, networking
+                            and technology certifications will
+                            be added here.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="certificate-card">
+
+                    <div class="certificate-icon">
+                        🎓
+                    </div>
+
+                    <div>
+
+                        <span class="certificate-status">
+                            FUTURE
+                        </span>
+
+                        <h3>
+                            Professional Development
+                        </h3>
+
+                        <p>
+                            Courses and certifications completed
+                            during my undergraduate journey.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= EXPERIENCE / ACTIVITIES ================= -->
+
+        <section class="section" id="experience">
+
+            <div class="section-heading">
+
+                <p class="section-number">
+                    06 — EXPERIENCE & ACTIVITIES
+                </p>
+
+                <h2>
+                    Growing through
+                    <span>experience.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="experience-card">
+
+                <div class="experience-icon">
+                    🚀
+                </div>
+
+                <div>
+
+                    <span class="certificate-status">
+                        CURRENT JOURNEY
+                    </span>
+
+                    <h3>
+                        Building & Learning
+                    </h3>
+
+                    <p>
+                        Developing practical skills through
+                        personal projects, university work,
+                        GitHub and continuous self-learning.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section class="contact-section" id="contact">
+
+            <p class="section-number">
+                07 — CONTACT
             </p>
 
-            <a href="mailto:your-email@example.com" class="btn">
-                Email Me
-            </a>
+            <h2>
+                Let's build something
+                <span>interesting.</span>
+            </h2>
 
-        </div>
+            <p>
+                I'm always interested in learning,
+                building and connecting with people
+                in technology.
+            </p>
 
-    </section>
+
+            <div class="contact-buttons">
+
+                <!-- CHANGE EMAIL -->
+
+                <a href="mailto:YOUR-EMAIL@example.com"
+                    class="primary-button">
+
+                    Email Me ↗
+
+                </a>
 
 
-    <!-- Footer -->
+                <!-- CHANGE LINKEDIN -->
+
+                <a href="https://www.linkedin.com/in/YOUR-LINKEDIN/"
+                    target="_blank"
+                    class="secondary-button">
+
+                    LinkedIn ↗
+
+                </a>
+
+
+                <a href="https://github.com/HashiLihinikadwa14"
+                    target="_blank"
+                    class="secondary-button">
+
+                    GitHub ↗
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
     <footer>
 
+        <div>
+
+            <strong>
+                Hashi<span>.</span>
+            </strong>
+
+        </div>
+
         <p>
-            © 2026 Hashi. All Rights Reserved.
+            Designed & built as part of my learning journey.
+        </p>
+
+        <p>
+            © <span id="year"></span> Hashi. All rights reserved.
         </p>
 
     </footer>
+
+
+    <!-- Back to top -->
+
+    <button id="backToTop" class="back-to-top">
+        ↑
+    </button>
 
 
     <script src="js/script.js"></script>
